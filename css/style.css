@@ -21,7 +21,6 @@ header {
     left: 0;
     right: 0;
 }
-
 header>div {
     box-sizing: border-box;
     margin:0 auto;
@@ -67,17 +66,14 @@ header>div {
     margin-top: 2.38px;
     font-size: 19.25px;
 }
-
 nav {
     width: 141px;
     display: flex;
     justify-content: space-between;
-
 }
 nav > ion-icon {
-    font-size: 16.5px;
+    font-size: 19.25px;
 }
-
 .separador-vertical{
     background-color: #EBEDEF;
     height: 22px;
@@ -99,8 +95,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-
-
 .caixa-de-stories {
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -177,7 +171,6 @@ main {
     /* height: 749px; */
     margin-bottom: 60px;
 }
-
 .post>.top{
     width: 100%;
     height: 61px;
@@ -192,15 +185,12 @@ main {
     margin-left: 17px;
     margin-right: 15px;
 }
-
-
 .post>.top>p{
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
 }
-
 .post>img{
     width: 100%;
 }
@@ -339,7 +329,6 @@ main {
     font-size: 14px;
     line-height: 16px;
 }
-
 .sugeridos>.perfil>div>img{
     height: 32px;
     width: 32px;
@@ -352,7 +341,6 @@ main {
     font-size: 12px;
     line-height: 14px;
     color: #139EF2;
-
 }
 .side-bar .nome {
     font-style: normal;
@@ -361,7 +349,6 @@ main {
     line-height: 16px;
     display: flex;
     align-items: center;
-
     color: #262626;
 }
 .sobre {
@@ -372,10 +359,8 @@ main {
     line-height: 13px;
     display: flex;
     align-items: center;
-
     color: #C7C7C7;
 }
-
 .copyright {
     margin-top: 18px;
     font-style: normal;
@@ -384,9 +369,29 @@ main {
     line-height: 13px;
     display: flex;
     align-items: center;
-
     color: #C7C7C7;
+}
+footer {
+    z-index:10;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
+footer>div {
+    box-sizing: border-box;
+    margin:0 21px;
+    width: 100%;
+    height: 54px;
+    font-size: 19.25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header .desktop-view{
     display: flex;
@@ -394,7 +399,9 @@ header .desktop-view{
 header .mobile-view{
     display: none;
 }
-
+footer {
+    display: none;
+}
 @media (max-width:935px){
 
     header>div {
@@ -410,7 +417,6 @@ header .mobile-view{
         justify-content: center;
     }
 }
-
 @media (max-width:614px) {
     header .desktop-view{
         display: none;
@@ -439,6 +445,7 @@ header .mobile-view{
     .post {
         width: 100vw;
         height: auto;
+        margin-bottom: 20px;
     }
     .post>.top{
         width: 100%;        
@@ -452,5 +459,8 @@ header .mobile-view{
     }
     .icones {
         width: 100%;
+    }
+    footer {
+        display: flex;
     }
 }
